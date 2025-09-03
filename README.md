@@ -10,7 +10,9 @@ Track daily/weekly habits from your terminal. Fast, local-first, and human-reada
 ---
 
 `$ habit add "Read fresh blogs for 30 mins" --goal daily --tags mind, refreshing`
+
 `$ habit done "Read fresh blogs for 30 mins"`
+
 `$ habit list`
 
 - Meditate 10m [daily] tags: mind, refreshing

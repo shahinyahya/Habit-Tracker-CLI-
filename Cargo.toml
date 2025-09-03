@@ -4,6 +4,17 @@ version = "0.1.0"
 edition = "2021"
 license = "MIT"
 
+[package.metadata.deb]
+maintainer = "Shahin Yahya shahinyahya99@gmail.com"
+license-file = "LICENSE"
+section = "utils"
+priority = "optional"
+depends = ""
+extended-description = "A tiny CLI habit tracker with JSON storage."
+assets = [
+    ["target/release/habit", "usr/bin/", "755"]
+]
+
 [dependencies]
 clap = { version = "4", features = ["derive"] }
 clap_complete = "4.5.57"

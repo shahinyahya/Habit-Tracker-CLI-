@@ -1,6 +1,7 @@
 mod cli;
 mod model;
 mod store;
+mod util;
 
 fn main() {
     println!("Hello");

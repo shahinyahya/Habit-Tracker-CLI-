@@ -2,10 +2,12 @@
 name = "habit"
 version = "0.1.0"
 edition = "2021"
+description = "A tiny CLI habit tracker (Rust) with JSON storage."
 license = "MIT"
+readme = "README.md"
 
 [package.metadata.deb]
-maintainer = "Shahin Yahya shahinyahya99@gmail.com"
+maintainer = "Shahin Yahya <shahinyahya99@gmail.com>"
 license-file = "LICENSE"
 section = "utils"
 priority = "optional"

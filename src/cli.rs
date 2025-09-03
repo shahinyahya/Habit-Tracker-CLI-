@@ -2,7 +2,7 @@ use clap::{Parser, Subcommand};
 use chrono::NaiveDate;
 
 #[derive(Parser,Debug)]
-#[command(name = "habit", version, about="Track daily habits from the terminal")]
+#[command(name = "habit", version, about="This is a Cli tool. You can track whatever you're doing. Track daily habits from the terminal")]
 pub struct Cli {
     #[command(subcommand)]
     pub cmd: Command,

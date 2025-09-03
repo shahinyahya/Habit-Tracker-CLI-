@@ -4,12 +4,11 @@ mod store;
 mod util;
 mod commands;
 
-fn main() {
-    println!("Hello");
+use anyhow::Result;
+use cli::{Cli, Command};
+use clap::Parser;
 
-    println!("{:?}", model::DataFile {
-        schema_version: 1,
-        habits: Vec::new(),
-        completions: Vec::new(),
-    });
+fn main() -> Result<()>{
+  let args = Cli::parse();
+  commands::dispatch(args)
 }

@@ -1,7 +1,7 @@
 use anyhow::{Ok, Result};
 use crate::store::JsonStore;
 
-fn run(all: bool, archived: bool, tag: Option<String>) -> Result<()> {
+pub fn run(all: bool, archived: bool, tag: Option<String>) -> Result<()> {
 
     let store = JsonStore::default()?;
     let data = store.read()?;
